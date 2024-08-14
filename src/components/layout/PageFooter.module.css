@@ -1,0 +1,30 @@
+.pageFooter {
+  display: flex;
+  background-color: #222;
+  color: #FFF;
+  text-align: center;
+  padding: 2rem;
+  flex-direction: column;
+}
+
+.socialsList {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  justify-content: center;
+}
+
+.socialsList li svg {
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+.socialsList li svg:hover {
+  color: #Fb3;
+}
+
+.copyright span {
+  font-weight: bold;
+  color: #Fb3;
+}

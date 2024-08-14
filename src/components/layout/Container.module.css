@@ -3,11 +3,11 @@
   justify-content: space-between;
   flex-wrap: wrap;
   margin: 0 auto;
-  max-width: 1200px;
+  width: 1200px;
 }
 
 .minHeight {
-  min-height: 75vh;
+  min-height: 80vh;
 }
 
 .start {
