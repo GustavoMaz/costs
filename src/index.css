@@ -11,6 +11,10 @@ body,
   height: 100%;
 }
 
+body { 
+  background-color: #fffbf7;
+}
+
 a {
   text-decoration: none;
 }

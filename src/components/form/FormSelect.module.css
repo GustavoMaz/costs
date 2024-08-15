@@ -1,0 +1,15 @@
+.formControl {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 2em 0;
+}
+
+.formControl label {
+  font-weight: bold;
+  margin-bottom: .6em;
+}
+
+.formControl select {
+  padding: .7em;
+}

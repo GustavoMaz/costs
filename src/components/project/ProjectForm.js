@@ -1,22 +1,28 @@
-function ProjectForm() {
+import FormInput from "../form/FormInput"
+import FormSelect from "../form/FormSelect"
+import FormSubmitButton from "../form/FormSubmitButton"
+
+function ProjectForm({ btnText }) {
   return (
     <form>
-      <div>
-        <label htmlFor="projectName">Nome do projeto:</label>
-        <input type="text" id="projectName" name="projectName" placeholder="Insira o nome do projeto" />
-      </div>
-      <div>
-        <label htmlFor="budget">Orçamento:</label>
-        <input type="number" id="budget" name="budget" placeholder="Insira o orçamento do projeto" />
-      </div>
-      <div>
-        <select name="categoryId">
-          <option selected disabled>Selecione a categoria</option>
-        </select>
-      </div>
-      <div>
-        <input type="submit" value="Criar projeto" />
-      </div>
+      <FormInput 
+        type="text"
+        name="name"
+        placeholder="Insira o nome do projeto"
+        text="Nome do projeto"
+      />
+      <FormInput 
+        type="number"
+        name="budget"
+        placeholder="Insira o orçamento total"
+        text="Orçamento do projeto"
+      />
+      <FormSelect 
+        name="category"
+        text="Selecione a categoria"
+        options={['Infraestrutura', 'Desenvolvimento', 'Operações']}
+      />
+      <FormSubmitButton text={btnText} />
     </form>
   )
 }
