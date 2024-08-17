@@ -1,8 +1,29 @@
+import {useEffect, useState} from 'react'
+
 import FormInput from "../form/FormInput"
 import FormSelect from "../form/FormSelect"
 import FormSubmitButton from "../form/FormSubmitButton"
 
 function ProjectForm({ btnText }) {
+
+  const [categories, setCategories] = useState([]);
+
+  // Evita que o request seja feito a todo momento buscando mudanças nos dados
+  useEffect(() => {
+    fetch("http://localhost:5000/categories", {
+      method: "GET",
+      headers: {
+        "Content-Type": "application/json",
+      }
+    })
+      .then((resp) => resp.json()) // Transformando a resposta em json
+      .then((data) => {
+        setCategories(data)
+      })
+      .catch((err) => console.log(err))
+  
+  }, [])
+
   return (
     <form>
       <FormInput 
@@ -18,9 +39,9 @@ function ProjectForm({ btnText }) {
         text="Orçamento do projeto"
       />
       <FormSelect 
-        name="category"
+        name="category_id"
         text="Selecione a categoria"
-        options={['Infraestrutura', 'Desenvolvimento', 'Operações']}
+        options={categories}
       />
       <FormSubmitButton text={btnText} />
     </form>

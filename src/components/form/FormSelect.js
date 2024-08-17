@@ -7,8 +7,8 @@ function FormSelect({ text, options, name, placeholder, value }) {
       <select name={name} id={name} placeholder={placeholder}>
         <option selected disabled hidden>Selecione a categoria</option>
         {
-          options.map((option, index) => (
-            <option key={index}>{option}</option>
+          options.map((option) => (
+            <option value={option.id} key={option.id}>{option.name}</option>
           ))
         }
       </select>
