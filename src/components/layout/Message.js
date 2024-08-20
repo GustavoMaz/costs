@@ -6,7 +6,6 @@ function Message({ type, msg }) {
   const [visible, setVisible] = useState(false)
 
   useEffect(() => {
-
     if (!msg) {
       setVisible(false);
       return
