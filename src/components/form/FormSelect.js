@@ -10,8 +10,9 @@ function FormSelect({ text, options, name, placeholder, value, handleOnChange })
         placeholder={placeholder}
         value={value || ''}
         onChange={handleOnChange}
+        required
       >
-        <option>Selecione a categoria</option>
+        <option value=''>Selecione a categoria</option>
         {
           options.map((option) => (
             <option value={option.id} key={option.id}>{option.name}</option>
