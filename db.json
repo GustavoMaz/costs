@@ -8,8 +8,33 @@
         "id": "3",
         "name": "Desenvolvimento"
       },
-      "cost": 0,
-      "services": []
+      "cost": 2514,
+      "services": [
+        {
+          "name": "teste",
+          "description": "Ofesafswgmsorgsdg",
+          "cost": "12",
+          "id": "e83cdc9a-9e4b-4ec7-9335-cab9b04f8cc9"
+        },
+        {
+          "name": "teste",
+          "description": "Ofesafswgmsorgsdg",
+          "cost": "12",
+          "id": "e83cdc9a-9e4b-4ec7-9335-cab9b04f8cc9"
+        },
+        {
+          "name": "teste",
+          "cost": "1245",
+          "description": "Ofesafswgmsorgsdg",
+          "id": "296bc508-1843-4ac7-9aab-5332a4e9d7d4"
+        },
+        {
+          "name": "Gustavo Mazurkiewitz",
+          "cost": "1245",
+          "description": "Ofesafswgmsorgsdg",
+          "id": "31cca698-415a-4b05-95e6-82ae04c3e7f7"
+        }
+      ]
     },
     {
       "id": "2525",

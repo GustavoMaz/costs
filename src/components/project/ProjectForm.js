@@ -4,6 +4,8 @@ import FormInput from "../form/FormInput"
 import FormSelect from "../form/FormSelect"
 import FormSubmitButton from "../form/FormSubmitButton"
 
+import styles from './ProjectForm.module.css'
+
 function ProjectForm({ btnText, handleSubmit, projectData }) {
 
   const [categories, setCategories] = useState([]);
@@ -48,7 +50,7 @@ function ProjectForm({ btnText, handleSubmit, projectData }) {
   }
 
   return (
-    <form onSubmit={submit}>
+    <form onSubmit={submit} className={styles.form}>
       <FormInput
         type="text"
         name="name"
