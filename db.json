@@ -1,5 +1,28 @@
 {
-  "projects": [],
+  "projects": [
+    {
+      "id": "943d",
+      "name": "Projeto Atualizado 2.0",
+      "budget": "20000",
+      "category": {
+        "id": "3",
+        "name": "Desenvolvimento"
+      },
+      "cost": 0,
+      "services": []
+    },
+    {
+      "id": "2525",
+      "name": "Interface",
+      "budget": "1200",
+      "category": {
+        "id": "4",
+        "name": "Design"
+      },
+      "cost": 0,
+      "services": []
+    }
+  ],
   "categories": [
     {
       "id": "1",

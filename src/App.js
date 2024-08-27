@@ -4,6 +4,7 @@ import About from "./components/pages/About";
 import Contact from "./components/pages/Contact";
 import NewProject from "./components/pages/NewProject";
 import Projects from "./components/pages/Projects";
+import Project from "./components/pages/Project";
 
 import NavBar from "./components/layout/NavBar";
 import PageFooter from "./components/layout/PageFooter";
@@ -21,6 +22,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/newproject" element={<NewProject />} />
+          <Route path="/project/:id" element={<Project />} />
         </Routes>
       </Container>
 

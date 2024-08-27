@@ -77,7 +77,7 @@ function Projects() {
           ))}
         {!removeLoading && <Loading />}
         {removeLoading && projects.length === 0 && (
-          <p>não há projetos ainda</p>
+          <p>Nenhum projeto foi encontrado.</p>
         )}
       </Container>
     </div>
